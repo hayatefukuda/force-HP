@@ -1,0 +1,39 @@
+.center {
+    position: static;
+    padding: 5% 45%;
+    background-color: aqua;
+}
+    
+    .left {
+    float: left;
+}
+
+.red {
+    color: red;
+}
+
+.box {
+    margin: 10%;
+    border: solid;
+    border-color: cadetblue;
+    padding: 5%;
+}
+
+.smalltitle {
+    background-color: white;
+    position: absolute;
+    top: 180px;
+    left: 8%;
+    width: 200px;
+}
+
+.circle {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    margin: 5%;
+    float: left;
+    padding: 8% 10%;
+    border-radius: 50%;
+
+}
