@@ -1,10 +1,16 @@
 .center {
-    position: static;
-    padding: 5% 45%;
-    background-color: aqua;
+    width: 120px;
+    padding-top: 10%;
+    color: aliceblue;
+    margin: 0 auto;
+}
+.recPic {
+    width: 100%;
+    height: 150px;
+    background: url(../../images/force/recruitment.png) top center / cover no-repeat;
 }
     
-    .left {
+.left {
     float: left;
 }
 
@@ -14,24 +20,35 @@
 
 .box {
     margin: 10%;
+    margin-bottom: 0%;
     border: solid;
-    border-color: cadetblue;
+    border-color: navy;
     padding: 5%;
 }
 
 .smalltitle {
     background-color: white;
-    position: absolute;
-    top: 180px;
-    left: 8%;
+    margin-top: -9%;
+    margin-left: -11%;
     width: 200px;
+    height: 40px;
+    margin-bottom: 5%;
 }
-
+.icon1 {
+    width: 60px;
+    height: 60px;
+    background: url(../../images/force/icon-newrecruit.png) top center / cover no-repeat;
+}
+.icon2 {
+    width: 60px;
+    height: 60px;
+    background: url(../../images/force/icon-midrecruit.png) top center / cover no-repeat;
+}
 .circle {
     background-color: gray;
     width: 200px;
     height: 200px;
-    margin: 5%;
+    margin: 9%;
     float: left;
     padding: 8% 10%;
     border-radius: 50%;
