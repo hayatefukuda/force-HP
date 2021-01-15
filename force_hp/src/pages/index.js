@@ -9,6 +9,7 @@ import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
 
 import Home from "../pages/company_information/Home"
+import Greetings from "../pages/company_information/Greeting"
 
 export default class IndexPage extends React.Component {
   constructor(props) {

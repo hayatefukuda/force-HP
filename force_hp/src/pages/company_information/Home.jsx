@@ -2,7 +2,7 @@ import React from "react"
 import Company_home from "../../images/force/company-home.png"
 import Greeting from "../../images/force/icon-greeting.png"
 
-import "./Home.scss"
+import "./home.scss"
 
 const Home = () => {
 
@@ -13,7 +13,7 @@ const Home = () => {
                 <p>企業情報</p>
             </div>
             <div className="contents">
-                <p>企業情報を表示します</p>
+                <p　className="font-weight-bold">企業情報を表示します。</p>
             </div>
             <div className="button">
                 <div className="greetings">
