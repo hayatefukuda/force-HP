@@ -1,6 +1,5 @@
 import Leaflet from 'leaflet'
 import React, { Component } from 'react';
-import './map.scss';
 import 'leaflet/dist/leaflet.css';
 import Mapping from './map';
 
