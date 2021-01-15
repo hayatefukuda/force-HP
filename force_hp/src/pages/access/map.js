@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
-import "./access.scss"
+
 
 export default class Mapping extends Component {
   render() {
-    const position = [35.6930823, 139.760481];
+    const position = [35.6930823, 139.7613345];
     return (
-      <div className="leaflet-container">
-        <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: '100px' }}>
+        <MapContainer center={position} zoom={60} scrollWheelZoom={false} style={{ height: '300px', width:'40%',minWidth:'400px',margin:'10%'}}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -19,7 +18,6 @@ export default class Mapping extends Component {
             </Popup>
           </Marker>
         </MapContainer>
-      </div>
     )
   }
 }
