@@ -10,6 +10,9 @@ import PortfolioCarousel from "../components/portfolio/carousel"
 
 import Home from "../pages/company_information/Home"
 import Greetings from "../pages/company_information/Greeting"
+import BusinessContent from "../pages/company_information/BusinessContent"
+import CompanyProfile from "../pages/company_information/CompanyProfile"
+import Contact from "../pages/contact/Contact"
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -37,7 +40,7 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <Home />
+      <Contact />
     )
   }
 }

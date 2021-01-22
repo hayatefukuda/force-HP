@@ -2,7 +2,7 @@ import React from "react"
 import Company_home from "../../images/force/company-home.png"
 import Greeting from "../../images/force/icon-greeting.png"
 
-import "./home.scss"
+import "./Home.scss"
 
 const Home = () => {
 
@@ -12,21 +12,21 @@ const Home = () => {
                 <img src={ Company_home } className="img-fluid" alt=""/>
                 <p>企業情報</p>
             </div>
-            <div className="contents">
-                <p　className="font-weight-bold">企業情報を表示します。</p>
+            <div className="container">
+                <p　className="mt-5 font-weight-bold">企業情報を表示します。</p>
             </div>
-            <div className="button">
+            <div className="d-flex justify-content-center button">
                 <div className="greetings">
                     <a href="#" className="text-reset">
                         ごあいさつ
-                        {/* <img src={ Greeting } /> */}
+                        <img src={ Greeting } />
                     </a>
                 </div>
                 <div className="business_content">
-                    <a href="#" className="text-reset">事業内容</a>
+                    <a href="#" className="ml-5 text-reset">事業内容</a>
                 </div>
                 <div className="company_profile">
-                    <a href="#" className="text-reset">会社概要</a>
+                    <a href="#" className="ml-5 text-reset">会社概要</a>
                 </div>
             </div>
         </div>
