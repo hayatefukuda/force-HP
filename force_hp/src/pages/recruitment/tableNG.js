@@ -1,8 +1,28 @@
 import React from "react"
 
+import { useStaticQuery, graphql } from "gatsby"
+
 import "./table.scss"
 
 const TableNG = () => {
+
+    // queryの取得処理を追加
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    contentfulNewGraduate {
+      bisContent {
+        bisContent
+      }
+      childContentfulNewGraduateReqQualTextNode {
+        reqQual
+      }
+      reqNumEn
+      reqNumSp
+    }
+  }
+`)
+
+
     return (
         <div>
             <table border="2" width="70%" cellPadding="10"className="tablePosition">
@@ -14,8 +34,11 @@ const TableNG = () => {
                 </tr>
                 <tr>
                     <th bgcolor="lightgreen">募集人数</th>
-                    <th></th>
-                    <th></th>
+                    
+                    {data.MyQuery.contentfulNewGraduate.map(({ reqNumEn }) => (
+                        <th>{reqNumEn}</th>
+                    ))}
+
                 </tr>
                 <tr>
                     <th bgcolor="lightgreen">応募資格</th>
@@ -23,7 +46,9 @@ const TableNG = () => {
                 </tr>
                 <tr>
                     <th bgcolor="lightgreen">業務内容</th>
-                    <th></th>
+                    {/* {data.contentfulNewGraduate.bisContent.map(({bisContent}) => (
+                        <th>{bisContent}</th>
+                    ))} */}
                     <th></th>
                 </tr>
                 <tr>
