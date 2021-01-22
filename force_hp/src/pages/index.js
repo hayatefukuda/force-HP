@@ -1,12 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
+import icon1 from "../images/force/icon-greeting.png"
+import icon2 from "../images/force/icon-business.png"
+import icon3 from "../images/force/icon-company.png"
+import icon4 from "../images/force/icon-newrecruit.png"
+import icon5 from "../images/force/icon-midrecruit.png"
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -36,28 +41,37 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home"/>
-        <section className="page-section bg-primary" id="about">
+        <section className="page-section" id="about">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="text-white mt-0">We've got what you need!</h2>
-                <hr className="divider light my-4"/>
-                <p className="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up
-                  and
-                  running in no time! Choose one of our open source, free to download, and easy to use themes! No
-                  strings
-                  attached!</p>
-                <a className="btn btn-light btn-xl js-scroll-trigger" href="#services"
-                   onClick={Scroller.handleAnchorScroll}>Get Started!</a>
+                <header className="home1">
+                <h2 className="font-weight-bold mt-0">企業情報</h2>
+                </header>
+                {/* <hr className="divider light my-4"/> */}
+                <a className="btn btn-danger btn-xl js-scroll-trigger" href="#services"
+                   onClick={Scroller.handleAnchorScroll}>ごあいさつ<img src={icon1} alt="ごあいさつ" height={50}/></a>
+                <a className="btn btn-danger btn-xl js-scroll-trigger" href="#services"
+                   onClick={Scroller.handleAnchorScroll}>事業内容<img src={icon2} alt="事業内容" height={50}/></a>
+                <a className="btn btn-danger btn-xl js-scroll-trigger" href="#services"
+                   onClick={Scroller.handleAnchorScroll}>企業概要<img src={icon3} alt="企業概要" height={50}/></a>
+                <p className="mb-4">フォース株式会社は優れた技術力の創出とＩＴがもつ限りない可能性の追求で、<br />お客様に必要とされる会社であることを目標としています。</p>
               </div>
             </div>
           </div>
         </section>
 
         <section className="page-section" id="services">
-          <div className="container">
-            <h2 className="text-center mt-0">At Your Service</h2>
-            <hr className="divider my-4"/>
+          <div className="container text-center">
+            <header className="home2">
+            <h2 className="font-weight-bold mt-0">採用情報</h2>
+            </header>
+            <a className="btn btn-primary btn-xl js-scroll-trigger" href="#services"
+               onClick={Scroller.handleAnchorScroll}>新卒採用<img src={icon4} alt="新卒採用" height={50}/></a>
+            <a className="btn btn-primary btn-xl js-scroll-trigger" href="#services"
+               onClick={Scroller.handleAnchorScroll}>中途採用<img src={icon5} alt="中途採用" height={50}/></a>
+            <p className="mb-4">経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
+            {/* <hr className="divider my-4"/>
             <div className="row">
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
@@ -87,11 +101,11 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">Is it really open source if it's not made with love?</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
-        <section id="portfolio">
+        {/* <section id="portfolio">
           <div className="container-fluid p-0">
             <div className="row no-gutters">
               <div className="col-lg-4 col-sm-6">
@@ -174,12 +188,12 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="page-section bg-dark text-white">
+        <section className="page-section">
           <div className="container text-center">
-            <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
-            <a className="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+            <h3 className="font-weight-bold mb-4">社員インタビュー</h3>
+            <a className="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">インタビューを見る</a>
           </div>
         </section>
 
@@ -187,21 +201,18 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="mt-0">Let's Get In Touch!</h2>
-                <hr className="divider my-4"/>
-                <p className="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an
-                  email
-                  and we will get back to you as soon as possible!</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (202) 555-0149</div>
-              </div>
-              <div className="col-lg-4 mr-auto text-center">
+                <header className="home3">
+                <h2 className="font-weight-bold mt-0">お問い合わせ</h2>
+                </header>
+              {/* <div className="col-lg-4 mr-auto">
                 <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a className="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                <a className="d-block" href="mailto:contact@yourwebsite.com">お問い合わせはこちらから<br />お気軽にご相談・お問い合わせ下さい。</a>
+              </div> */}
+                <a className="btn btn-light btn-xl js-scroll-trigger" href="#services"
+                   onClick={Scroller.handleAnchorScroll}>お問い合わせはこちらから<br />お気軽にご相談・お問い合わせ下さい。</a>
+                <p className="mb-5">お電話にてお問い合わせ頂く場合、フォース株式会社【総合係】まで</p>
+                <p className="text-danger font-weight-bold mb-5">TEL 03-5259-5231</p>
+                <p className="font-weight-bold mb-5">平日9:30〜18:30</p>
               </div>
             </div>
           </div>
