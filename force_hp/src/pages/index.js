@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
                 <header className="home1">
-                <h2 className="font-weight-bold mt-0">企業情報</h2>
+                <h2 className="font-weight-bold text-white mt-0">企業情報</h2>
                 </header>
                 {/* <hr className="divider light my-4"/> */}
                 <a className="btn btn-danger btn-xl js-scroll-trigger" href="#services"
@@ -64,7 +64,7 @@ export default class IndexPage extends React.Component {
         <section className="page-section" id="services">
           <div className="container text-center">
             <header className="home2">
-            <h2 className="font-weight-bold mt-0">採用情報</h2>
+            <h2 className="font-weight-bold text-white mt-0">採用情報</h2>
             </header>
             <a className="btn btn-primary btn-xl js-scroll-trigger" href="#services"
                onClick={Scroller.handleAnchorScroll}>新卒採用<img src={icon4} alt="新卒採用" height={50}/></a>
@@ -193,7 +193,10 @@ export default class IndexPage extends React.Component {
         <section className="page-section">
           <div className="container text-center">
             <h3 className="font-weight-bold mb-4">社員インタビュー</h3>
-            <a className="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">インタビューを見る</a>
+            <header className="home4">
+            <h2 className="font-weight-bold mt-0">名前</h2>
+            </header>
+            <button type="button" class="btn btn-outline-primary" href="#services" onClick={Scroller.handleAnchorScroll}>インタビューを見る</button>
           </div>
         </section>
 
@@ -202,14 +205,14 @@ export default class IndexPage extends React.Component {
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
                 <header className="home3">
-                <h2 className="font-weight-bold mt-0">お問い合わせ</h2>
+                <h2 className="font-weight-bold text-white mt-0">お問い合わせ</h2>
                 </header>
               {/* <div className="col-lg-4 mr-auto">
                 <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
                 <a className="d-block" href="mailto:contact@yourwebsite.com">お問い合わせはこちらから<br />お気軽にご相談・お問い合わせ下さい。</a>
               </div> */}
-                <a className="btn btn-light btn-xl js-scroll-trigger" href="#services"
-                   onClick={Scroller.handleAnchorScroll}>お問い合わせはこちらから<br />お気軽にご相談・お問い合わせ下さい。</a>
+                <button type="button" class="btn btn-primary" href="#services" onClick={Scroller.handleAnchorScroll}>
+                  お問い合わせはこちらから<br />お気軽にご相談・お問い合わせ下さい。</button>
                 <p className="mb-5">お電話にてお問い合わせ頂く場合、フォース株式会社【総合係】まで</p>
                 <p className="text-danger font-weight-bold mb-5">TEL 03-5259-5231</p>
                 <p className="font-weight-bold mb-5">平日9:30〜18:30</p>
