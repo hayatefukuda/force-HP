@@ -40,7 +40,7 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <BusinessContent />
+      <Home />
     )
   }
 }

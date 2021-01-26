@@ -1,6 +1,7 @@
 import React from "react"
-import { createPortal } from "react-dom"
 import Company from "../../images/force/company.png"
+
+import "./companyprofile.scss"
 
 const CompanyProfile = () => {
 
@@ -10,56 +11,48 @@ const CompanyProfile = () => {
                 <img src={ Company } className="img-fluid" alt=""/>
                 <p>会社概要</p>
             </div>
-            <table className="container mt-5 table table-bordered">
-                {/* <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead> */}
+            <table className="container mt-5 table table-bordered" width="100%">
                 <tbody>
                     <tr>
-                        <th scope="row">会社名</th>
-                        <th>フォース株式会社</th>
+                        <th scope="row" width="15%" className="text-center">会社名</th>
+                        <td width="85%" className="text-center">フォース株式会社</td>
                     </tr>
                     <tr>
-                        <th scope="row">設立</th>
-                        <th>2013年（平成25年）11月</th>
+                        <th scope="row" className="text-center">設立</th>
+                        <td className="text-center">2013年（平成25年）11月</td>
                     </tr>
                     <tr>
-                        <th scope="row">資本金</th>
-                        <th>10,000,000円</th>
+                        <th scope="row" className="text-center">資本金</th>
+                        <td className="text-center">10,000,000円</td>
                     </tr>
                     <tr>
-                        <th scope="row">代表者</th>
-                        <th>代表取締役　松永　淳</th>
+                        <th scope="row" className="text-center">代表者</th>
+                        <td className="text-center">代表取締役　松永　淳</td>
                     </tr>
                     <tr>
-                        <th scope="row">社員数</th>
-                        <th>84名（2020年4月現在）</th>
+                        <th scope="row" className="text-center">社員数</th>
+                        <td className="text-center">84名（2020年4月現在）</td>
                     </tr>
                     <tr>
-                        <th scope="row">所在地</th>
-                        <th>〒101-0054 東京都千代田区神田錦町3-18 寿ビル7階
+                        <th scope="row" className="text-center">所在地</th>
+                        <td className="text-center">〒101-0054 東京都千代田区神田錦町3-18 寿ビル7階
                             会社所在地
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th scope="row">連絡先</th>
-                        <th>Tel:03-5259-5231(代表)　Fax:03-5259-5320</th>
+                        <th scope="row" className="text-center">連絡先</th>
+                        <td className="text-center">Tel:03-5259-5231(代表)　Fax:03-5259-5320</td>
                     </tr>
                     <tr>
-                        <th scope="row">事業内容</th>
-                        <th>情報処理に関するソフトウェア及びハードウェア、スマートフォン・
+                        <th scope="row" className="text-center align-middle">事業内容</th>
+                        <td>情報処理に関するソフトウェア及びハードウェア、スマートフォン・
                             タブレット端末用の開発・製造及び販売、動画プラットフォームの販売
                             事業内容
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th scope="row">関連会社</th>
-                        <th>
+                        <th scope="row" className="text-center align-middle">関連会社</th>
+                        <td>
                             <p>サン株式会社（セールスプロモーション・ソリューション・企画）</p>
                             <p>株式会社サンシャイン（教育事業・人材派遣事業）</p>
                             <p>データウェアネットワーク株式会社（システム開発・Web制作事業・特定労働派遣事業）</p>
@@ -72,7 +65,7 @@ const CompanyProfile = () => {
                             <p>システムラボラトリー株式会社（受託開発及び製品販売）</p>
                             <p>株式会社エフディエス（静脈認証システムの開発・販売）</p>
                             <p>株式会社grapple（マーケティングコンテンツ、Webインテグレーション、分析）</p>                            
-                        </th>
+                        </td>
                     </tr>
                 </tbody>
             </table>
