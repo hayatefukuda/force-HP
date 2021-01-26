@@ -8,7 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
+// import Footer from "./footer"
 import "./layout.scss"
+import logo from "../images/force/logo-white.png"
 
 const getScrollNode = (element) => {
   return element.ownerDocument.scrollingElement || element.ownerDocument.documentElement
@@ -60,9 +62,11 @@ export default class Layout extends React.Component {
         id="page-top">
         <Header/>
         <main>{this.props.children}</main>
-        <footer className="bg-light py-5">
-          <div className="container">
-            <div className="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+        {/* <Footer/> */}
+        <footer className="bg-secondary">
+          <div className="container text-center">            
+            <a href="#page-top"><img src={logo} alt="フォース株式会社" height={100}/></a>
+            {/* <div className="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div> */}
           </div>
         </footer>
       </div>
