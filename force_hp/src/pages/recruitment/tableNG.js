@@ -1,5 +1,4 @@
 import React from "react"
-
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./table.scss"
@@ -8,23 +7,35 @@ const TableNG = () => {
 
     // queryの取得処理を追加
   const data = useStaticQuery(graphql`
-  query MyQuery {
-    contentfulNewGraduate {
-      bisContent {
-        bisContent
+  query  {
+    allContentfulNewGraduate(filter: {node_locale: {eq: "en-US"}}) {
+      edges {
+        node {
+          reqNumEn
+          reqNumSp
+          reqQual {
+            reqQual
+          }
+          bisContentEn {
+            bisContentEn
+          }
+          bisContentSp {
+            bisContentSp
+          }
+          treatment {
+            treatment
+          }
+        }
       }
-      childContentfulNewGraduateReqQualTextNode {
-        reqQual
-      }
-      reqNumEn
-      reqNumSp
     }
   }
 `)
 
+  const number =  data.allContentfulNewGraduate.edges
 
     return (
         <div>
+          {number.map(({ node }) => (
             <table border="2" width="70%" cellPadding="10"className="tablePosition">
 
                 <tr>
@@ -35,27 +46,34 @@ const TableNG = () => {
                 <tr>
                     <th bgcolor="lightgreen">募集人数</th>
                     
-                    {data.MyQuery.contentfulNewGraduate.map(({ reqNumEn }) => (
-                        <th>{reqNumEn}</th>
-                    ))}
+                    
+                        <th>{node.reqNumEn}</th>
+                    
+                    
+                        <th>{node.reqNumSp}</th>
+                    
 
                 </tr>
                 <tr>
                     <th bgcolor="lightgreen">応募資格</th>
-                    <th colSpan="2"></th>
+                    
+                        <th colSpan="2">{node.reqQual.reqQual}</th>
+                    
+                    
                 </tr>
                 <tr>
                     <th bgcolor="lightgreen">業務内容</th>
-                    {/* {data.contentfulNewGraduate.bisContent.map(({bisContent}) => (
-                        <th>{bisContent}</th>
-                    ))} */}
-                    <th></th>
+                    
+                        <th>{node.bisContentEn.bisContentEn}</th>
+                    
+                        <th>{node.bisContentSp.bisContentSp}</th>
                 </tr>
                 <tr>
                     <th bgcolor="lightgreen">待遇</th>
-                    <th colSpan="2"></th>
+                    <th colSpan="2">{node.treatment.treatment}</th>
                 </tr>
             </table>
+            ))}
         </div>
     )
 }
