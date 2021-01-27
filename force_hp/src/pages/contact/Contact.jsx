@@ -3,6 +3,8 @@ import ContactImage from "../../images/force/contact.png"
 
 import "./contact.scss"
 
+//バリデーションチェック
+
 const Contact = () => {
 
     return (
@@ -18,41 +20,41 @@ const Contact = () => {
                 <p className="required-text">※すべて必須項目です。</p>
             </div>
                 <form className="container">
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="name">お名前</label>
-                        <input type="text" class="form-control" id="name" placeholder="例：山田　花子"/>
+                        <input type="text" class="form-control" id="name" placeholder="例：山田　花子" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">会社名・法人名・団体名 ※個人のお客様は「個人」とご記入ください</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="例：〇〇株式会社"/>
+                        <label for="company">会社名・法人名・団体名 ※個人のお客様は「個人」とご記入ください</label>
+                        <input type="text" class="form-control" id="company" placeholder="例：〇〇株式会社" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">部署・役職等</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="例：営業部部長"/>
-                    </div>
-                    <div class="email">
-                        <label for="exampleInputEmail1">メールアドレス</label>
-                        <input type="email" class="form-control" id="email" placeholder="例：exzmple@example.com"/>
+                        <label for="position">部署・役職等</label>
+                        <input type="text" class="form-control" id="position" placeholder="例：営業部部長" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">電話番号</label>
-                        <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="例：03-5259-5231"/>
+                        <label for="email">メールアドレス</label>
+                        <input type="email" class="form-control" id="email" placeholder="例：exzmple@example.com" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">郵便番号</label>
-                        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="例：101-0054"/>
+                        <label for="tel">電話番号</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="例：03-5259-5231" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">都道府県</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="例：東京都"/>
+                        <label for="postalCode">郵便番号</label>
+                        <input type="number" class="form-control" id="postalCode" placeholder="例：101-0054" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">ご住所</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="例：千代田区神田錦町3-18 寿ビル7F"/>
+                        <label for="prefectures">都道府県</label>
+                        <input type="text" class="form-control" id="prefectures" placeholder="例：東京都" required/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">メッセージ本文</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="address">ご住所</label>
+                        <input type="text" class="form-control" id="address" placeholder="例：千代田区神田錦町3-18 寿ビル7F" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ本文</label>
+                        <textarea class="form-control" id="message" rows="3" required />
                     </div>
                     <div className="text-center">
                         <button type="submit" class="btn btn-primary">確認画面へ</button>
@@ -63,6 +65,50 @@ const Contact = () => {
                 <p>TEL 03-5259-5231</p>
             </div>
         </div>
+        // <form>
+        //     <div class="form-row">
+        //         <div class="col-md-4 mb-3">
+        //             <label for="validationDefault01">First name</label>
+        //             <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required />
+        //         </div>
+        //         <div class="col-md-4 mb-3">
+        //             <label for="validationDefault02">Last name</label>
+        //             <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required />
+        //         </div>
+        //         <div class="col-md-4 mb-3">
+        //             <label for="validationDefaultUsername">Username</label>
+        //             <div class="input-group">
+        //                 <div class="input-group-prepend">
+        //                     <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        //                 </div>
+        //                 <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required />
+        //             </div>
+        //         </div>
+        //     </div>
+        //     <div class="form-row">
+        //         <div class="col-md-6 mb-3">
+        //             <label for="validationDefault03">City</label>
+        //             <input type="text" class="form-control" id="validationDefault03" placeholder="City" required />
+        //         </div>
+        //         <div class="col-md-3 mb-3">
+        //             <label for="validationDefault04">State</label>
+        //             <input type="text" class="form-control" id="validationDefault04" placeholder="State" required />
+        //         </div>
+        //         <div class="col-md-3 mb-3">
+        //             <label for="validationDefault05">Zip</label>
+        //             <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required />
+        //         </div>
+        //     </div>
+        //     <div class="form-group">
+        //         <div class="form-check">
+        //             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+        //             <label class="form-check-label" for="invalidCheck2">
+        //                 Agree to terms and conditions
+        //             </label>
+        //         </div>
+        //     </div>
+        //     <button class="btn btn-primary" type="submit">Submit form</button>
+        // </form>
     )
 }
 
