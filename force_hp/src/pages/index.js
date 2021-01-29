@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <PrivacyPolicy />
+      <CompanyProfile />
       // <Layout>
       //   <SEO title="Home"/>
       //   <section className="page-section" id="about">

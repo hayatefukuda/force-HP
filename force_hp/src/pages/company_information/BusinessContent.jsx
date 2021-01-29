@@ -1,11 +1,13 @@
 import React from "react"
 import Business from "../../images/force/business.png"
+import Layout from "../../components/layout"
 
 import "./businesscontent.scss"
 
 const BusinessContent = () => {
 
     return (
+        <Layout>
         <div>
             <div className="heading">
                 <img src={ Business } className="img-fluid" alt=""/>
@@ -26,6 +28,7 @@ const BusinessContent = () => {
                 </p>
             </div>
         </div>
+        </Layout>
     )
 }
 
