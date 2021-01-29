@@ -1,0 +1,156 @@
+.text-image {
+	position: relative;
+}
+  
+.text-image p {
+	position: absolute;
+	// align-items: center;
+	top: 40%;
+	left: 45%;
+	font-size: 45px;
+	color: #ffffff;
+	font-family: Hiragino Maru Gothic ProN;
+	text-shadow: 2px 2px 2px dimgray;
+}
+
+.company-button {
+	display: inline-block;
+	text-decoration: none;
+    // background: red;
+	color: #FFF;
+	width: 300px;
+	height: 300px;
+	line-height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	overflow: hidden;
+	transition: .4s;
+	margin-top: 7%;
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: 30px;
+	font-family: Hiragino Maru Gothic ProN;
+	text-shadow: 2px 2px 2px dimgray;
+	padding: 4%;
+}
+
+// .button:hover {
+// 	background: white;
+//   }
+
+.recruit-button {
+	display: inline-block;
+	text-decoration: none;
+    // background: blue;
+	color: #FFF;
+	width: 300px;
+	height: 300px;
+	line-height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	overflow: hidden;
+	transition: .4s;
+	margin-top: 7%;
+	margin-right: 10%;
+	margin-left: 10%;
+	font-size: 30px;
+	font-family: Hiragino Maru Gothic ProN;
+	text-shadow: 2px 2px 2px dimgray;
+	padding: 4%;
+}
+
+.message {
+	font-size: 30px;
+	font-family: YuMincho;
+	text-align: right;
+	margin-top: 10%;
+}
+
+.blueline-button {
+	font-size: 30px;
+	font-family: YuMincho;
+	margin-top: 7%;
+	padding: 1%;
+	background-color: white;
+}
+
+.interview-title {
+	font-size: 40px;
+	font-family: YuMincho;
+	margin-left: 8%;
+}
+
+.interview-person {
+	margin-top: 10%;
+	padding-left: 3%;
+	float: left;
+}
+
+.interview-person p {
+	// position: absolute;
+	// align-items: center;
+	// margin-top: -20%;
+	font-size: 30px;
+	color: white;
+	font-family: Hiragino Maru Gothic ProN;
+	text-shadow: 2px 2px 2px dimgray;
+}
+
+// .interview-person p {
+// 	position: absolute;
+// 	align-items: center;
+// 	margin-top: 15%;
+// 	font-size: 25px;
+// 	color: black;
+// 	font-family: YuMincho;
+// 	text-shadow: 2px 2px 2px dimgray;
+// }
+
+.contact-button {
+	// display: flex;
+	margin-top: 5%;
+	text-align: center;
+	// height: 30%;
+}
+
+.contact-button1 {
+	margin-top: 2%;
+	font-size: 35px;
+	font-family: YuMincho;
+	color: black;
+	float: left;
+	text-shadow: 2px  2px 1px white,
+	-2px  2px 1px white,
+	 2px -2px 1px white,
+	-2px -2px 1px white,
+	 2px  0px 1px white,
+	 0px  2px 1px white,
+	-2px  0px 1px white,
+	 0px -2px 1px white;
+}
+
+.contact-button2 {
+	font-size: 23px;
+	font-family: YuMincho;
+	color: black;
+	text-shadow: 2px  2px 1px white,
+	-2px  2px 1px white,
+	 2px -2px 1px white,
+	-2px -2px 1px white,
+	 2px  0px 1px white,
+	 0px  2px 1px white,
+	-2px  0px 1px white,
+	 0px -2px 1px white;
+}
+
+.contact-info {
+	font-size: 30px;
+	font-family: YuMincho;
+	margin-top: 5%;
+}
+
+.telephone {
+	font-size: 40px;
+	font-family: Hiragino Maru Gothic Pro;
+	text-shadow: 2px 2px 2px dimgray;
+}
