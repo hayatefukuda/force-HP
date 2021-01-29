@@ -1,0 +1,39 @@
+.footer-display1 {
+	display: flex;
+}
+
+.footer-display2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-bottom: 1%;
+}
+
+.footer-bg {
+	background-color: #405468;
+}
+
+.footer1 {
+	font-family: YuMincho;
+	font-size: 25px;
+	color: gainsboro;
+}
+
+.footer2 {
+	font-family: YuMincho;
+	font-size: 18px;
+	color: gainsboro;
+	margin: 2%;
+	text-align: right;
+}
+
+.footer3 {
+	font-family: YuMincho;
+	font-size: 22px;
+	color: gainsboro;
+}
+
+.pagetop-button {
+	margin-right: 0%;
+}
