@@ -8,7 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.scss"
+// import EmployeeInterview from "../pages/EmployeeInterview"
 
 const getScrollNode = (element) => {
   return element.ownerDocument.scrollingElement || element.ownerDocument.documentElement
@@ -59,12 +61,9 @@ export default class Layout extends React.Component {
         ref={this.siteContainer}
         id="page-top">
         <Header/>
+        {/* <EmployeeInterview/> */}
         <main>{this.props.children}</main>
-        <footer className="bg-light py-5">
-          <div className="container">
-            <div className="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
-          </div>
-        </footer>
+        <Footer/>
       </div>
     )
   }
