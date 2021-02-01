@@ -1,11 +1,39 @@
 import React from "react"
 import Form from "./form"
 import TableNG from "./tableNG"
+import { useStaticQuery, graphql } from "gatsby"
 
 import "./newGraduate.scss"
 
 
 const NewGraduate = () => {
+
+     // queryの取得処理を追加
+  const data = useStaticQuery(graphql`
+  query {
+    allContentfulNewGraduate(filter: {node_locale: {eq: "en-US"}}) {
+      edges {
+        node {
+          myNaviPic {
+            id
+            fluid {
+              base64
+            }
+          }
+          myNaviUrl {
+            myNaviUrl
+          }
+        }
+      }
+    }
+  }
+  
+
+`)
+
+  const number =  data.allContentfulNewGraduate.edges
+
+
     return (
         <div>
             <div className="titlePic">
@@ -24,6 +52,11 @@ const NewGraduate = () => {
                 <div>
                     <h6 className="ssTitle">エントリー</h6>
                     <p className="text">フォース株式会社にご興味をお持ち頂きました方は、お電話や応募フォームにて直接お問い合わせ下さい。下記、マイナビからも応募が可能です。</p>
+                    {number.map(({node}) =>(
+                        
+                            <a href={node.myNaviUrl.muNaviUrl} >URL</a>
+                        
+                    ))}
                 </div>
                 <div>
                     <h6 className="ssTitle">会社説明会兼一次選考会</h6>
