@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql,Link } from "gatsby"
 // import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -88,10 +88,10 @@ export default class IndexPage extends React.Component {
             <img src={ Recruitment } className="img-fluid" alt=""/>
             <p>採用情報</p>
           </div>
-            <a className="recruit-button btn btn-primary" href="#services"
-               onClick={Scroller.handleAnchorScroll}>新卒採用<img src={icon4} alt="新卒採用" height={80}/></a>
-            <a className="recruit-button btn btn-primary" href="#services"
-               onClick={Scroller.handleAnchorScroll}>中途採用<img src={icon5} alt="中途採用" height={80}/></a>
+            <Link className="recruit-button btn btn-primary" href="#services"
+               to="/recruitment/newGraduate">新卒採用<img src={icon4} alt="新卒採用" height={80}/></Link>
+            <Link className="recruit-button btn btn-primary" href="#services"
+               to="/recruitment/midCareer">中途採用<img src={icon5} alt="中途採用" height={80}/></Link>
           </div>
             <p className="message">経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
             {/* <canvas/> */}

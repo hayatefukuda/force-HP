@@ -2,6 +2,8 @@ import React from "react"
 import Form from "./form"
 import TableNG from "./tableNG"
 import { useStaticQuery, graphql } from "gatsby"
+import Layout from "../../components/layout"
+
 
 import "./newGraduate.scss"
 
@@ -35,6 +37,7 @@ const NewGraduate = () => {
 
 
     return (
+      <Layout>
         <div>
             <div className="titlePic">
                 <h3 className="title">新卒採用</h3>
@@ -80,6 +83,7 @@ const NewGraduate = () => {
             </div>
             <Form />
         </div>
+      </Layout>
     )
 }
 
