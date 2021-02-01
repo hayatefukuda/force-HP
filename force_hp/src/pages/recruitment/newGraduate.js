@@ -57,7 +57,7 @@ const NewGraduate = () => {
                     <p className="text">フォース株式会社にご興味をお持ち頂きました方は、お電話や応募フォームにて直接お問い合わせ下さい。下記、マイナビからも応募が可能です。</p>
                     {number.map(({node}) =>(
                         
-                            <a href={node.myNaviUrl.muNaviUrl} >URL</a>
+                            <p>{node.myNaviUrl.muNaviUrl}</p>
                         
                     ))}
                 </div>
