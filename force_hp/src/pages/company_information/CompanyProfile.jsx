@@ -1,14 +1,13 @@
 import React from "react"
 import Company from "../../images/force/company.png"
 import { Link } from "gatsby"
-import Layout from "../../components/layout"
+// import Layout from "../../components/layout"
 
 import "./companyprofile.scss"
 
 const CompanyProfile = () => {
 
     return (
-        <Layout>
         <div>
             <div className="heading">
                 <img src={ Company } className="img-fluid" alt=""/>
@@ -110,7 +109,6 @@ const CompanyProfile = () => {
                 </tbody>
             </table>
         </div>
-        </Layout>
     )
 }
 
