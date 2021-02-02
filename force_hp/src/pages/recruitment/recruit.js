@@ -18,7 +18,7 @@ const Recruit = () => {
                     <p>採用情報</p>
                 </div>
                 <div>
-                    <p className="text">「人材」こそ会社の原動力であるとの考え方から人物重視の採用を行っております。</p>
+                    <p className="textcenter">「人材」こそ会社の原動力であるとの考え方から人物重視の採用を行っております。</p>
                 </div>
                 <div className="box">
                     <div className ="smalltitle">
