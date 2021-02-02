@@ -2,6 +2,7 @@ import React from "react"
 import Form from "./form"
 import TableMC from "./tableMC"
 import Layout from "../../components/layout"
+import recruitment from "../../images/force/recruitment_fullsize.jpg"
 
 import "./newGraduate.scss"
 
@@ -10,8 +11,9 @@ const MidCareer = () => {
     return (
         <Layout>
             <div>
-                <div className="titlePic">
-                    <h3 className="title">中途採用</h3>
+                <div className="heading">
+                    <img src={ recruitment } className="img-fluid" alt=""/>
+                    <p>中途採用</p>
                 </div>
                 <div>
                     <h5 className="sTitle">中途採用について</h5>

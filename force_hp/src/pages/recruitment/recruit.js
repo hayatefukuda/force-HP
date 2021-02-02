@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import icon4 from "../../images/force/icon-newrecruit.png"
 import icon5 from "../../images/force/icon-midrecruit.png"
+import recruitment from "../../images/force/recruitment_fullsize.jpg"
 
 
 import "./recruit .scss"
@@ -12,8 +13,9 @@ const Recruit = () => {
     return (
         <Layout>
             <div>
-                <div className="recPic">
-                    <h3 className="center">採用情報</h3>
+                <div className="heading">
+                    <img src={ recruitment } className="img-fluid" alt=""/>
+                    <p>採用情報</p>
                 </div>
                 <div>
                     <p className="text">「人材」こそ会社の原動力であるとの考え方から人物重視の採用を行っております。</p>

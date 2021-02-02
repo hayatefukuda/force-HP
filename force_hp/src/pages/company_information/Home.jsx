@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/layout"
-import Company_home from "../../images/force/company-home.png"
+import Company_home from "../../images/force/company-home_fullsize.jpg"
 import Greeting from "../../images/force/icon-greeting.png"
 
 import "./Home.scss"

@@ -1,5 +1,5 @@
 import React from "react"
-import ContactImage from "../../images/force/contact.png"
+import ContactImage from "../../images/force/contact_fullsize.jpg"
 import Layout from "../../components/layout"
 
 import "./privacypolicy.scss"

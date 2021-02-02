@@ -3,14 +3,16 @@ import Mapping from "./map"
 
 import "./access.scss"
 import Layout from "../../components/layout"
+import access from "../../images/force/access_fullsize.jpg"
 
 
 const Access =()=>{
     return (
         <Layout>
             <div>
-                <div className="accessPic">
-                    <h3 className="title">アクセス</h3>
+                <div className="heading">
+                    <img src={ access } className="img-fluid" alt=""/>
+                    <p>採用情報</p>
                 </div>
                 <Mapping />
                 <h5 className="acTitle">最寄駅</h5>

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
-import Greeting from "../../images/force/greeting.png"
+import Greeting from "../../images/force/greeting_fullsize.jpg"
 
 import "./greeting.scss"
 

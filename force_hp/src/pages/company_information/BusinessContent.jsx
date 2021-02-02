@@ -1,5 +1,5 @@
 import React from "react"
-import Business from "../../images/force/business.png"
+import Business from "../../images/force/business_fullsize.jpg"
 import Layout from "../../components/layout"
 
 import "./businesscontent.scss"

@@ -3,6 +3,8 @@ import Form from "./form"
 import TableNG from "./tableNG"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout"
+import recruitment from "../../images/force/recruitment_fullsize.jpg"
+
 
 
 import "./newGraduate.scss"
@@ -39,8 +41,9 @@ const NewGraduate = () => {
     return (
       <Layout>
         <div>
-            <div className="titlePic">
-                <h3 className="title">新卒採用</h3>
+            <div className="heading">
+                <img src={ recruitment } className="img-fluid" alt=""/>
+                <p>新卒採用</p>
             </div>
             <div>
                 <h5 className="sTitle">新卒採用について</h5>
