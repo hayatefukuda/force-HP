@@ -1,8 +1,3 @@
-.accessPic {
-    width: 100%;
-    height: 150px;
-    background: url(../../images/force/access.png) top center / cover no-repeat;
-}
 .acTitle {
     color: rgb(0, 132, 255);
     padding-left: 2%;
@@ -13,4 +8,7 @@
     margin-right: 2%;
     border: solid;
     border-color: rgb(0, 132, 255);
+}
+.col-sm {
+    margin: 3%;
 }

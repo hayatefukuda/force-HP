@@ -44,10 +44,12 @@ const Recruit = () => {
                         <p>プロフェッショナルを目指したいという強い意志のある方。<br />いつまでにこうなりたいという明確な目標にむかって日々自己研磨できる方。</p>
                     </div>
                 </div>
-                <Link className="recruit-button btn btn-secondary" href="#services"
-                to="/recruitment/newGraduate">新卒採用<img src={icon4} alt="新卒採用" height={80}/></Link>
-                <Link className="recruit-button btn btn-secondary" href="#services"
-                to="/recruitment/midCareer">中途採用<img src={icon5} alt="中途採用" height={80}/></Link>
+                <div className="spacer">
+                    <Link className="recruit-button btn btn-secondary" href="#services"
+                    to="/recruitment/newGraduate">新卒採用<img src={icon4} alt="新卒採用" height={80}/></Link>
+                    <Link className="recruit-button btn btn-secondary" href="#services"
+                    to="/recruitment/midCareer">中途採用<img src={icon5} alt="中途採用" height={80}/></Link>
+                </div>
             </div>
         </Layout>
     )

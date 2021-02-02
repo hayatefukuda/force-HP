@@ -7,7 +7,7 @@ export default class Mapping extends Component {
   render() {
     const position = [35.6930823, 139.7613345];
     return (
-        <MapContainer center={position} zoom={60} scrollWheelZoom={false} style={{ height: '300px', width:'40%',minWidth:'400px',margin:'10%'}}>
+        <MapContainer center={position} zoom={16} scrollWheelZoom={false} style={{ height: '350px', width:'60%',minWidth:'400px',margin:'5%'}}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
