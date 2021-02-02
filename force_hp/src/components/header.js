@@ -29,7 +29,7 @@ export default class Header extends React.Component {
                   <li className="nav-item">
                     <Nav.Link className={"js-scroll-trigger"} 
                     // href="#about"
-                    ><Link class="nav-link" to="/company_information/CompanyProfile">企業情報</Link></Nav.Link>
+                    ><Link class="nav-link" to="/company_information/Home">企業情報</Link></Nav.Link>
                   </li>
                   <li className="nav-item">
                     <Nav.Link className={"js-scroll-trigger"} 
@@ -44,7 +44,7 @@ export default class Header extends React.Component {
                   <li className="nav-item">
                     <Nav.Link className={"js-scroll-trigger"} 
                     // href="#contact"
-                    ><Link class="nav-link" to="/company_information/CompanyProfile">お問い合わせ</Link></Nav.Link>
+                    ><Link class="nav-link" >お問い合わせ</Link></Nav.Link>
                   </li>
                 </Scrollspy>
               </Nav>
