@@ -4,6 +4,7 @@ import TableNG from "./tableNG"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import recruitment from "../../images/force/recruitment_fullsize.jpg"
+import mynavi from "../../images/force/mynavi.png"
 
 
 
@@ -63,6 +64,11 @@ const NewGraduate = () => {
                             <p>{node.myNaviUrl.muNaviUrl}</p>
                         
                     ))}
+                    <div className="text">
+                      <a href="https://job.mynavi.jp/21/pc/search/corp237340/outline.html">
+                        <img src={ mynavi } width="200px" height="60px" />
+                      </a>
+                    </div>
                 </div>
                 <div>
                     <h6 className="ssTitle">会社説明会兼一次選考会</h6>

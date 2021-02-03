@@ -59,7 +59,11 @@ export default class IndexPage extends React.Component {
                 <h1 className="bigmessage3 text-white">を拓く。</h1>
               </div>
                 <div className="text-center">
-                <button type="button" class="btn btn-outline-primary blueline-button" href="#about" onClick={Scroller.handleAnchorScroll}>こちらから採用エントリー</button>
+                <a href="https://job.mynavi.jp/21/pc/search/corp237340/outline.html">
+                  <button type="button" class="btn btn-outline-primary blueline-button" href="#about" 
+                  // onClick={Scroller.handleAnchorScroll}
+                  >こちらから採用エントリー</button>
+                </a>
                 </div>
         </header>
         <section className="page-section" id="about">
