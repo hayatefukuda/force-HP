@@ -16,7 +16,7 @@ const BusinessContent = () => {
             <div className="main_contents">
                 <p className="mt-5 font-weight-bold">システムエンジニアリングサービス（SES</p>
             </div>
-            <div className="container sub_contents">
+            <div className="sub_contents">
                 <p className="mt-5">
                     システムエンジニアリングサービスのお客様要望は、コスト・技術及びノウハウ・ロケーションなど、
                     様々なケースがあります。フォースではこれらのご要望にマッチしたご提案ご提案を行います。
