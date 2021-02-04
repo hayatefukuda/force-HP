@@ -1,7 +1,13 @@
 .sub_contents {
     margin: 5% 15%;
+    font-family: YuMincho;
 }
-.leftred {
-    float: left;
+.main_contents span:nth-child(1) {
     color: red;
+}
+.main_contents {
+    font-family: YuMincho;
+    text-align: center;
+    color: black;
+    overflow: hidden;
 }

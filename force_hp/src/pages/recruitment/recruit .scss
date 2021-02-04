@@ -1,23 +1,15 @@
-.center {
-    width: 120px;
-    padding-top: 10%;
-    color: aliceblue;
-    margin: 0 auto;
-}
+// .center {
+//     width: 120px;
+//     padding-top: 10%;
+//     color: aliceblue;
+//     margin: 0 auto;
+// }
 
-.recPic {
-    width: 100%;
-    height: 150px;
-    background: url(../../images/force/recruitment.png) top center / cover no-repeat;
-}
-    
-.left {
-    float: left;
-}
-
-.red {
-    color: red;
-}
+// .recPic {
+//     width: 100%;
+//     height: 150px;
+//     background: url(../../images/force/recruitment.png) top center / cover no-repeat;
+// }
 
 .box {
     margin: 10%;
@@ -25,15 +17,21 @@
     border: solid;
     border-color: navy;
     padding: 5%;
+    font-family: YuMincho;
 }
 
 .smalltitle {
     background-color: white;
+    font-family: YuMincho;
     margin-top: -9%;
     margin-left: -11%;
     width: 200px;
     height: 40px;
     margin-bottom: 5%;
+}   
+.smalltitle span:nth-child(1) {
+    color: red;
+    font-family: YuMincho;
 }
 .spacer {
     padding-bottom: 5%;
@@ -42,4 +40,5 @@
 .textcenter {
     text-align: center;
     padding-top: 5%;
+    font-family: YuMincho;
 }
