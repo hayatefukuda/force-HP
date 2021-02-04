@@ -13,7 +13,7 @@ const Greetings = () => {
                     <img src={ Greeting } className="img-fluid" alt=""/>
                     <p>ごあいさつ</p>
                 </div>
-                <div className="main_contents">
+                <div className="main_contentsG">
                     <p><span>社員</span>が一丸となって社会への貢献を目指す</p>
                 </div>
                 <div className="sub_contents">

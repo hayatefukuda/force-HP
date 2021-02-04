@@ -22,7 +22,7 @@ const Recruit = () => {
                 </div>
                 <div className="box">
                     <div className ="smalltitle">
-                        <h5>弊社が求める<span>人物像</span></h5>
+                        <p>弊社が求める<span>人物像</span></p>
                     </div>
                     <div>
                         <p>１.チャレンジ精神</p>
