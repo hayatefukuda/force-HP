@@ -49,10 +49,16 @@ const CompanyProfile = () => {
                         </tr>
                         <tr>
                             <th scope="row" className="text-center align-middle">事業内容</th>
-                            <td>情報処理に関するソフトウェア及びハードウェア、スマートフォン・
-                                タブレット端末用の開発・製造及び販売、動画プラットフォームの販売
+                            <td>
+                                <p 
+                                className="text-center"
+                                >
+                                    情報処理に関するソフトウェア及びハードウェア、スマートフォン・
+                                タブレット端末用の開発・製造及び販売、動画プラットフォームの販売</p>
                                 <Link to="/company_information/BusinessContent">
-                                    <p>
+                                <p 
+                                className="text-center"
+                                >
                                         事業内容
                                     </p>
                                 </Link>
@@ -61,48 +67,70 @@ const CompanyProfile = () => {
                         <tr>
                             <th scope="row" className="text-center align-middle">関連会社</th>
                             <td>
-                                <p>
+                            <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://san-corp.co.jp/" target="_blank">サン株式会社</a>
                                     （セールスプロモーション・ソリューション・企画）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://sun-shine-sogogakuen.com/" target="_blank">株式会社サンシャイン</a>
                                     （教育事業・人材派遣事業）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="https://www.dwn.co.jp/" target="_blank">データウェアネットワーク株式会社</a>
                                     （システム開発・Web制作事業・特定労働派遣事業）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://www.dragon-inc.jp/" target="_blank">ドラゴン株式会社</a>
                                     （SP、PR、WEBを中心とした広告制作全般）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="https://www.noah.jp/" target="_blank">株式会社ノア</a>
                                     （インターネット・サービス事業・ウェブサイト・ソリューション事業）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="https://cielo.jp.net/" target="_blank">株式会社シエロ</a>
                                     （デイサービスの運用）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://www.rbc-s.co.jp/" target="_blank">アールビィシィ株式会社</a>
                                     （建設業界のノウハウを凝縮したパッケージソフトのご提案、
                                     導入から保守運用、建設事業に携わる建機・仮設事業様専門アプリケーションの開発）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://www.metssoftware.co.jp/" target="_blank">メッツソフトウェア株式会社</a>
                                     （受託開発）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="https://www.syslabo.co.jp/" target="_blank">システムラボラトリー株式会社</a>
                                     （受託開発及び製品販売）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://www.fds-jpn.com/" target="_blank">株式会社エフディエス</a>
                                     （静脈認証システムの開発・販売）
                                 </p>
-                                <p>
+                                <p 
+                                className="text-center1"
+                                >
                                     <a className="firstChild lastChild" href="http://grapple.asia/" target="_blank">株式会社grapple</a>
                                     （マーケティングコンテンツ、Webインテグレーション、分析）
                                 </p>                            
