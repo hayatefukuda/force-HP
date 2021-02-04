@@ -46,9 +46,9 @@ const Recruit = () => {
                 </div>
                 <div className="row justify-content-center">
                     <Link className="recruit-button btn btn-secondary" href="#services"
-                    to="/recruitment/newGraduate">新卒採用<img src={icon4} alt="新卒採用" height={80}/></Link>
+                    to="/recruitment/newGraduate"><p>新卒採用</p><img src={icon4} alt="新卒採用" height={80}/></Link>
                     <Link className="recruit-button btn btn-secondary" href="#services"
-                    to="/recruitment/midCareer">中途採用<img src={icon5} alt="中途採用" height={80}/></Link>
+                    to="/recruitment/midCareer"><p>中途採用</p><img src={icon5} alt="中途採用" height={80}/></Link>
                 </div>
                 <br />
             </div>

@@ -78,11 +78,11 @@ export default class IndexPage extends React.Component {
                 <h2 className="font-weight-bold text-white mt-0">企業情報</h2>
                 </header> */}
                 <Link className="company-button btn btn-danger" href="#services"
-                   to="/company_information/Greeting">ごあいさつ<img src={icon1} alt="" height={80}/></Link>
+                   to="/company_information/Greeting"><p>ごあいさつ</p><img src={icon1} alt="" height={80}/></Link>
                 <Link className="company-button btn btn-danger" href="#services"
-                   to="/company_information/BusinessContent">事業内容<img src={icon2} alt="事業内容" height={80}/></Link>
+                   to="/company_information/BusinessContent"><p>事業内容</p><img src={icon2} alt="事業内容" height={80}/></Link>
                 <Link className="company-button btn btn-danger" href="#services"
-                   to="/company_information/CompanyProfile">企業概要<img src={icon3} alt="企業概要" height={80}/></Link>
+                   to="/company_information/CompanyProfile"><p>企業概要</p><img src={icon3} alt="企業概要" height={80}/></Link>
               </div>
                 <p className="message">フォース株式会社は優れた技術力の創出とＩＴがもつ限りない可能性の追求で、<br />お客様に必要とされる会社であることを目標としています。</p>
                 <hr width="1100" height="10" align="right" color="navy"></hr>
@@ -100,9 +100,9 @@ export default class IndexPage extends React.Component {
             <p>採用情報</p>
           </div>
             <Link className="recruit-button btn btn-primary" href="#services"
-               to="/recruitment/newGraduate">新卒採用<img src={icon4} alt="新卒採用" height={80}/></Link>
+               to="/recruitment/newGraduate"><p>新卒採用</p><img src={icon4} alt="新卒採用" height={80}/></Link>
             <Link className="recruit-button btn btn-primary" href="#services"
-               to="/recruitment/midCareer">中途採用<img src={icon5} alt="中途採用" height={80}/></Link>
+               to="/recruitment/midCareer"><p>中途採用</p><img src={icon5} alt="中途採用" height={80}/></Link>
           </div>
             <p className="message">経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
             {/* <canvas/> */}

@@ -38,11 +38,11 @@ const Home = () => {
 
                 <div className="row justify-content-center">
                     <Link className="company-button btn btn-danger" href="#services"
-                    to="/company_information/Greeting">ごあいさつ<img src={icon1} alt="" height={80}/></Link>
+                    to="/company_information/Greeting"><p>ごあいさつ</p><img src={icon1} alt="" height={80}/></Link>
                     <Link className="company-button btn btn-danger" href="#services"
-                    to="/company_information/BusinessContent">事業内容<img src={icon2} alt="事業内容" height={80}/></Link>
+                    to="/company_information/BusinessContent"><p>事業内容</p><img src={icon2} alt="事業内容" height={80}/></Link>
                     <Link className="company-button btn btn-danger" href="#services"
-                    to="/company_information/CompanyProfile">企業概要<img src={icon3} alt="企業概要" height={80}/></Link>
+                    to="/company_information/CompanyProfile"><p>企業概要</p><img src={icon3} alt="企業概要" height={80}/></Link>
                 </div>
                 <br />
             </div>
