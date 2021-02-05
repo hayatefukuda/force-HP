@@ -12,7 +12,7 @@ const Access =()=>{
             <div>
                 <div className="heading">
                     <img src={ access } className="img-fluid" alt=""/>
-                    <p>採用情報</p>
+                    <p>アクセス</p>
                 </div>
                 <div class="container">
                     <div class="row">

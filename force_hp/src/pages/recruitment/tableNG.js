@@ -39,12 +39,12 @@ const TableNG = () => {
             <table border="2" width="70%" cellPadding="10"className="tablePosition">
 
                 <tr>
-                    <th width="20%" bgcolor="lightgreen">募集職種</th>
+                    <th width="20%" className="coloring">募集職種</th>
                     <th width="40%">エンジニア職</th>
                     <th width="40%">ITサポート職</th>
                 </tr>
                 <tr>
-                    <th bgcolor="lightgreen">募集人数</th>
+                    <th className="coloring">募集人数</th>
                     
                     
                         <th>{node.reqNumEn}</th>
@@ -55,21 +55,21 @@ const TableNG = () => {
 
                 </tr>
                 <tr>
-                    <th bgcolor="lightgreen">応募資格</th>
+                    <th className="coloring">応募資格</th>
                     
                         <th colSpan="2">{node.reqQual.reqQual}</th>
                     
                     
                 </tr>
                 <tr>
-                    <th bgcolor="lightgreen">業務内容</th>
+                    <th className="coloring">業務内容</th>
                     
                         <th>{node.bisContentEn.bisContentEn}</th>
                     
                         <th>{node.bisContentSp.bisContentSp}</th>
                 </tr>
                 <tr>
-                    <th bgcolor="lightgreen">待遇</th>
+                    <th className="coloring">待遇</th>
                     <th colSpan="2">{node.treatment.treatment}</th>
                 </tr>
             </table>

@@ -40,7 +40,7 @@ const CompanyProfile = () => {
                         <tr>
                             <th scope="row" className="text-center">所在地</th>
                             <td className="text-center">〒101-0054 東京都千代田区神田錦町3-18 寿ビル7階
-                                会社所在地
+                                <Link to="/access/access"><p>会社所在地</p></Link>
                             </td>
                         </tr>
                         <tr>
