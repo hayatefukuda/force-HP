@@ -17,6 +17,8 @@
 	margin-top: 5%;
 	margin-left: 10%;
 	margin-bottom: 5%;
+	max-width: 400px;
+	min-width: 10px;
 }
 
 .interview p {
@@ -38,6 +40,8 @@
 	margin-top: 5%;
 	margin-left: 60%;
 	margin-bottom: 5%;
+	max-width: 400px;
+	min-width: 150px;
 }
 
 .interview2 p {
@@ -46,11 +50,11 @@
 	background-color: rgba(0, 89, 255, 0.664);
 	position: absolute;
 	margin-top: -5.5%;
-	margin-left: 2%;
+	// margin-left: 2%;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
-	padding-left: 7%;
-	padding-right: 4%;
+	// padding-left: 7%;
+	// padding-right: 4%;
 	color: #ffffff;
 	text-shadow: 2px 2px 2px dimgray;
 }
@@ -59,6 +63,8 @@
 	margin-top: 5%;
 	margin-left: 10%;
 	margin-bottom: 5%;
+	max-width: 400px;
+	min-width: 150px;
 }
 
 .interview3 p {
@@ -74,4 +80,7 @@
 	padding-right: 4%;
 	color: #ffffff;
 	text-shadow: 2px 2px 2px dimgray;
+}
+#interview {
+	width: 100%;
 }

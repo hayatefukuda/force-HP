@@ -85,7 +85,7 @@ export default class IndexPage extends React.Component {
                    to="/company_information/CompanyProfile"><p>企業概要</p><img src={icon3} alt="企業概要" height={80}/></Link>
               </div>
                 <p className="message">フォース株式会社は優れた技術力の創出とＩＴがもつ限りない可能性の追求で、<br />お客様に必要とされる会社であることを目標としています。</p>
-                <hr width="1100" height="10" align="right" color="navy"></hr>
+                <hr width="70%" height="10" align="right" color="navy"></hr>
               {/* </div> */}
           {/* </div> */}
         </section>
@@ -106,7 +106,7 @@ export default class IndexPage extends React.Component {
           </div>
             <p className="message">経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
             {/* <canvas/> */}
-            <hr width="800" height="10" align="right" color="navy"></hr>
+            <hr width="70%" height="10" align="right" color="navy"></hr>
         </section>
 
         <section className="page-section">
@@ -132,7 +132,7 @@ export default class IndexPage extends React.Component {
              <p>インタビュー要約</p>
            </div>
            </div>          
-             <button type="button" class="btn btn-outline-primary blueline-button" href="#interview" onClick={Scroller.handleAnchorScroll}>インタビューを見る</button>
+             <Link to="/employee_interview/EmployeeInterview"><button type="button" class="btn btn-outline-primary blueline-button" href="#interview" >インタビューを見る</button></Link>
          </div>
          </section>
 
