@@ -61,7 +61,7 @@ export default class IndexPage extends React.Component {
               </div>
                 <div className="text-center">
                 <a href="https://job.mynavi.jp/21/pc/search/corp237340/outline.html">
-                  <button type="button" class="btn btn-outline-primary blueline-button" href="#about" 
+                  <button type="button" class="btn-outline-primary blueline-button" href="#about" 
                   // onClick={Scroller.handleAnchorScroll}
                   >こちらから採用エントリー</button>
                 </a>
@@ -78,11 +78,11 @@ export default class IndexPage extends React.Component {
                 {/* <header className="home1">
                 <h2 className="font-weight-bold text-white mt-0">企業情報</h2>
                 </header> */}
-                <Link className="company-button btn btn-danger" href="#services"
+                <Link className="company-button btn-danger" href="#services"
                    to="/company_information/Greeting"><p>ごあいさつ</p><img src={icon1} alt="" height={80}/></Link>
-                <Link className="company-button btn btn-danger" href="#services"
+                <Link className="company-button btn-danger" href="#services"
                    to="/company_information/BusinessContent"><p>事業内容</p><img src={icon2} alt="事業内容" height={80}/></Link>
-                <Link className="company-button btn btn-danger" href="#services"
+                <Link className="company-button btn-danger" href="#services"
                    to="/company_information/CompanyProfile"><p>企業概要</p><img src={icon3} alt="企業概要" height={80}/></Link>
               </div>
                 <p className="message">フォース株式会社は優れた技術力の創出とＩＴがもつ限りない可能性の追求で、<br />お客様に必要とされる会社であることを目標としています。</p>
@@ -100,9 +100,9 @@ export default class IndexPage extends React.Component {
             <img src={ Recruitment } className="img-fluid" alt=""/>
             <p>採用情報</p>
           </div>
-            <Link className="recruit-button btn btn-primary" href="#services"
+            <Link className="recruit-button btn-primary" href="#services"
                to="/recruitment/newGraduate"><p>新卒採用</p><img src={icon4} alt="新卒採用" height={80}/></Link>
-            <Link className="recruit-button btn btn-primary" href="#services"
+            <Link className="recruit-button btn-primary" href="#services"
                to="/recruitment/midCareer"><p>中途採用</p><img src={icon5} alt="中途採用" height={80}/></Link>
           </div>
             <p className="message">経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>

@@ -20,9 +20,9 @@ const Footer = () => {
           </div>
           <div className="footer-display2">
             <Link to="/access/access" className="footer3">アクセス</Link>
-            <a href="#page-top" className="footer3">お問い合わせ</a>
+            <Link href="/contact/Contact" className="footer3">お問い合わせ</Link>
             <Link to="/contact/PrivacyPolicy" className="footer3">プライバシーポリシー</Link>
-            <a href="#page-top" className="footer3">リンク</a>
+            {/* <a href="#page-top" className="footer3">リンク</a> */}
           </div>
           </div>
           <div className="text-center">

@@ -1,5 +1,5 @@
 import React from "react"
-import Form from "./form"
+import Form from "../contact/Form"
 import TableMC from "./tableMC"
 import Layout from "../../components/layout"
 import recruitment from "../../images/force/recruitment_fullsize.jpg"
@@ -50,6 +50,7 @@ const MidCareer = () => {
                     <h5 className="sTitle">応募フォーム</h5>
                 </div>
                 <Form />
+                <br />
             </div>
         </Layout>
     )
