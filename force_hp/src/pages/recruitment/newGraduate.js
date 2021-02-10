@@ -1,5 +1,5 @@
 import React from "react"
-import Form from "./form"
+import Form from "../contact/Form"
 import TableNG from "./tableNG"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout"
@@ -91,6 +91,7 @@ const NewGraduate = () => {
                 <h5 className="sTitle">応募フォーム</h5>
             </div>
             <Form />
+            <br />
         </div>
       </Layout>
     )
