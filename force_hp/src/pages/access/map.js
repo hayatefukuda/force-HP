@@ -14,7 +14,7 @@ export default class Mapping extends Component {
           />
           <Marker position={position}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              フォース株式会社 <br />〒101-0054<br /> 千代田区神田錦町三丁目18番地 寿ビル7階
             </Popup>
           </Marker>
         </MapContainer>
