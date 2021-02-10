@@ -29,11 +29,7 @@
     "react-form": "^4.0.1",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^6.14.2",
-<<<<<<< HEAD
     "react-router-dom": "^5.2.0",
-=======
-    "react-leaflet": "^3.0.0-rc.0",
->>>>>>> 51ca1d43b2c5a80768d00c3e4319d3ccdd431651
     "react-scroll": "^1.8.1",
     "react-scrollspy": "^3.4.0"
   },
