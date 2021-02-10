@@ -1,14 +1,7 @@
-//number型のスピンボタン削除
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .required-text {
-    color: crimson;
+  color: crimson;
 }
 
 .bottom-contents {
-    text-align: center;
+  text-align: center;
 }
