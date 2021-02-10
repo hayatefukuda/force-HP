@@ -50,9 +50,9 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <Layout>
+      // <Layout>
       <Contacts />
-      </Layout>
+      // </Layout>
       // <Layout>
       //   <SEO title="Home"/>
       //   <header className="masthead">
