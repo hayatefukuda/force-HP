@@ -17,6 +17,8 @@
 	margin-top: 5%;
 	margin-left: 10%;
 	margin-bottom: 5%;
+	max-width: 400px;
+	min-width: 10px;
 }
 
 .interview p {
@@ -36,8 +38,10 @@
 
 .interview2 {
 	margin-top: 5%;
-	margin-left: 60%;
+	margin-left: 50%;
 	margin-bottom: 5%;
+	max-width: 400px;
+	min-width: 150px;
 }
 
 .interview2 p {
@@ -59,6 +63,8 @@
 	margin-top: 5%;
 	margin-left: 10%;
 	margin-bottom: 5%;
+	max-width: 400px;
+	min-width: 150px;
 }
 
 .interview3 p {
@@ -74,4 +80,7 @@
 	padding-right: 4%;
 	color: #ffffff;
 	text-shadow: 2px 2px 2px dimgray;
+}
+#interview {
+	width: 100%;
 }

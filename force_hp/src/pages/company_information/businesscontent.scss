@@ -1,7 +1,9 @@
 // メインテキスト
 .main_contents {
+    font-family: YuMincho;
     font-size: 40px;
-    color: #3d7099;
+    // color: #3d7099;
+    color: rgb(26, 26, 150);
     text-align: center;
     text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.53);
     border-bottom: 1px solid black;
@@ -15,4 +17,11 @@
 // タイトルテキスト
 .heading p {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.75);
+}
+// .heading {
+//     margin-top: 110px;
+// }
+.img-fluid {
+    width: 100%;
+    max-height: 350px;
 }
