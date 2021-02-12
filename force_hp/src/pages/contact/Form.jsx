@@ -5,7 +5,7 @@ import Confirm from "./Confirm"
 import "./form.scss"
 
 const Form = () => {
-    const { register, handleSubmit, reset, errors, getValues} = useForm({defaultValues: {name: 'デフォルト表示'}})
+    const { register, handleSubmit, reset, errors, getValues} = useForm()
 
     const [data, setData] = useState(false)
 
@@ -70,7 +70,6 @@ const Form = () => {
                             pattern: {
                                 value: emailVal
                             }
-                            // value: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
                         })} />
                     {errors.email && <p className="formError">※メールアドレスを正しく入力してください</p>}
                 </div>
@@ -87,7 +86,6 @@ const Form = () => {
                             pattern: {
                                 value: telVal
                             }
-                            // value: /^0\d{2,3}-\d{1,4}-\d{4}$/
                         })} />
                     {errors.tel && <p className="formError">※電話番号を正しく入力してください</p>}
                 </div>
@@ -104,7 +102,6 @@ const Form = () => {
                             pattern: {
                                 value: postalCodeVal
                             }
-                            // value: /^\d{3}-\d{4}$/ 
                         })} />
                     {errors.postalcode && <p className="formError">※郵便番号を正しく入力してください</p>}
                 </div>
@@ -121,7 +118,6 @@ const Form = () => {
                             pattern: {
                                 value: prefecturesVal
                             }
-                            // value: /^(東京都|北海道|(京都|大阪)府|.{2,3}県)$/
                         })} />
                     {errors.prefectures && <p className="formError">※都道府県名を正しく入力してください</p>}
                 </div>
