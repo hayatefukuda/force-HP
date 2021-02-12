@@ -5,13 +5,22 @@ import Confirm from "./Confirm"
 import "./form.scss"
 
 const Form = () => {
-    const { register, handleSubmit, reset, errors, getValues} = useForm()
+    const { register, handleSubmit, reset, errors, getValues} = useForm({defaultValues: {name: 'デフォルト表示'}})
 
     const [data, setData] = useState(false)
 
     const onSubmitData = () => setData(true)
 
     const [modalShow, setModalShow] = useState(false)
+
+    const emailVal = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
+
+    const telVal = /^0\d{2,3}-\d{1,4}-\d{4}$/
+
+    const postalCodeVal = /^\d{3}-\d{4}$/
+
+    const prefecturesVal = /^(東京都|北海道|(京都|大阪)府|.{2,3}県)$/
+
     return (
         <div>
             <form className="container" onSubmit={handleSubmit(onSubmitData)}>
@@ -58,7 +67,10 @@ const Form = () => {
                         placeholder="例：exzmple@example.com"
                         ref={register({
                             required: true,
-                            value: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
+                            pattern: {
+                                value: emailVal
+                            }
+                            // value: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
                         })} />
                     {errors.email && <p className="formError">※メールアドレスを正しく入力してください</p>}
                 </div>
@@ -72,7 +84,10 @@ const Form = () => {
                         placeholder="例：03-5259-5231"
                         ref={register({
                             required: true,
-                            value: /^0\d{2,3}-\d{1,4}-\d{4}$/
+                            pattern: {
+                                value: telVal
+                            }
+                            // value: /^0\d{2,3}-\d{1,4}-\d{4}$/
                         })} />
                     {errors.tel && <p className="formError">※電話番号を正しく入力してください</p>}
                 </div>
@@ -81,12 +96,15 @@ const Form = () => {
                     <input
                         id="postalcode"
                         name="postalcode"
-                        type="number"
+                        type="text"
                         className="form-control"
                         placeholder="例：101-0054"
                         ref={register({
                             required: true,
-                            value: /^\d{3}-\d{4}$/ 
+                            pattern: {
+                                value: postalCodeVal
+                            }
+                            // value: /^\d{3}-\d{4}$/ 
                         })} />
                     {errors.postalcode && <p className="formError">※郵便番号を正しく入力してください</p>}
                 </div>
@@ -100,7 +118,10 @@ const Form = () => {
                         placeholder="例：東京都"
                         ref={register({
                             required: true,
-                            value: /^(東京都|北海道|(京都|大阪)府|.{2,3}県)$/
+                            pattern: {
+                                value: prefecturesVal
+                            }
+                            // value: /^(東京都|北海道|(京都|大阪)府|.{2,3}県)$/
                         })} />
                     {errors.prefectures && <p className="formError">※都道府県名を正しく入力してください</p>}
                 </div>
@@ -135,7 +156,7 @@ const Form = () => {
                         type="submit"
                         onClick={() => setModalShow(true)}
                         value="確認画面へ"
-                        className="btn btn-primary" />
+                        className="btn btn-primary ml-5" />
                 </div>
             </form>
             {data &&
