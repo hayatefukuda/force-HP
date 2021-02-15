@@ -2,7 +2,7 @@ import React from "react"
 import Scrollspy from "react-scrollspy"
 import { Navbar, Nav } from "react-bootstrap"
 import Scroller from './scroller'
-import logo from '../images/force/logo-black.png'
+import logo from '../images/force/logo-white.png'
 import { Link } from "gatsby"
 
 export default class Header extends React.Component {
