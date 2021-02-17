@@ -143,16 +143,16 @@ const Form = () => {
                     {errors.message && <p className="formError">※メッセージを入力してください</p>}
                 </div>
                 <div className="text-center">
-                    <input
+                    {/* <input
                         type="button"
                         onClick={reset}
                         value="クリア"
-                        className="btn btn-primary" />
+                        className="btn btn-primary" /> */}
                     <input
                         type="submit"
                         onClick={() => setModalShow(true)}
                         value="確認画面へ"
-                        className="btn btn-primary ml-5" />
+                        className="btn btn-primary" />
                 </div>
             </form>
             {data &&

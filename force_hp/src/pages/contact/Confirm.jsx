@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./confirm.scss"
+import FormConclusion from "./FormConclusion"
 
 import { useForm } from 'react-hook-form'
 import { init, sendForm } from 'emailjs-com'
@@ -11,7 +12,9 @@ init("user_UywqsHYGWUywnj1A1lwNk")
 const Confirm = props => {
   const {values} = props
 
-  const { register , handleSubmit } = useForm();
+  const { register , handleSubmit } = useForm()
+
+  const [modalShow, setModalShow] = useState(false)
 
       const onSubmit = (data) => {
         //emailjsのテンプレートIDを貼り付け
@@ -132,8 +135,11 @@ const Confirm = props => {
               />
           </div>
           <input className="btn btn-secondary" onClick={props.onHide} value="訂正する" />
-          <input className="btn btn-primary" type="submit" value="送信" />
+          <input className="btn btn-primary" type="submit" value="送信" onClick={() => setModalShow(true)} />
         </form>
+          <FormConclusion
+            show={modalShow}
+          />
         </div>
       </Modal.Body>
     </Modal>
