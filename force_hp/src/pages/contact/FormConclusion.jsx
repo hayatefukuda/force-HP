@@ -41,7 +41,9 @@ const FormConclusion = props => {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <button onClick={reload}>閉じる</button>
+        <a href="#page-top">
+          <button className="btn btn-outline-primary" onClick={reload}>閉じる</button>
+        </a>
       </Modal.Footer>
     </Modal>
   );

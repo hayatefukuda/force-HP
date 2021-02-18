@@ -17,14 +17,6 @@ import Recruitment from "../images/force/recruitment-home.png"
 import Contact from "../images/force/contact-home.png"
 import Interview from "../images/force/interview-person.png"
 
-import Home from "../pages/company_information/Home"
-import Greetings from "../pages/company_information/Greeting"
-import BusinessContent from "../pages/company_information/BusinessContent"
-import CompanyProfile from "../pages/company_information/CompanyProfile"
-import Contacts from "../pages/contact/Contact"
-import PrivacyPolicy from "../pages/contact/PrivacyPolicy"
-import Form from "../pages/contact/Form"
-
 export default class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -61,13 +53,13 @@ export default class IndexPage extends React.Component {
               </div>
                 <div className="text-center">
                 <a href="https://job.mynavi.jp/21/pc/search/corp237340/outline.html">
-                  <button type="button" class="btn-outline-primary blueline-button" href="#about" 
+                  <button type="button" className="btn-outline-primary blueline-button" href="#about" 
                   // onClick={Scroller.handleAnchorScroll}
                   >こちらから採用エントリー</button>
                 </a>
                 </div>
         </header>
-        <section className="page-section" id="about">
+        <section className="page-section back" id="about">
           {/* <div className="container"> */}
             <div className="row justify-content-center">
               {/* <div className="col-lg-8 text-center"> */}

@@ -37,7 +37,7 @@ const Confirm = props => {
     >
       <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
-          確認画面
+          <h3>確認画面</h3>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -134,8 +134,10 @@ const Confirm = props => {
                 ref={register}
               />
           </div>
-          <input className="btn btn-secondary" onClick={props.onHide} value="訂正する" />
-          <input className="btn btn-primary" type="submit" value="送信" onClick={() => setModalShow(true)} />
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <input className="btn btn-secondary revision " onClick={props.onHide} value="訂正する" />
+            <input className="btn btn-primary ml-4" type="submit" value="送信" onClick={() => setModalShow(true)} />
+          </div>
         </form>
           <FormConclusion
             show={modalShow}
