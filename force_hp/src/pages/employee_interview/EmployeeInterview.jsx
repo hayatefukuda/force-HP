@@ -12,18 +12,21 @@ const EmployeeInterview = () => {
                     <img src={ Interview } className="img-fluid" alt=""/>
                     <p>社員インタビュー</p>
                 </div>
-                <div className="interview text-white">
-                    <img src={ Person } className="img-fluid" alt=""/>
-                    <p>職種　名　　　　　前</p>
-                </div>
-                <div className="interview2 text-white">
-                    <img src={ Person } className="img-fluid" alt=""/>
-                    <p>職種　名　　　　　前</p>
+                    <div className="interview text-white">
+                        <img src={ Person } className="img-fluid" alt=""/>
+                        <p>職種　名　　　　前</p>
+                    </div>
+                <div className="rightside">
+                    <div className="interview2 text-white">
+                        <img src={ Person } className="img-fluid" alt=""/>
+                        <p>職種　<span>名　　　　前</span></p>
+                    </div>
                 </div>
                 <div className="interview3 text-white">
                     <img src={ Person } className="img-fluid" alt=""/>
-                    <p>職種　名　　　　　前</p>
+                    <p>職種　名　　　　前</p>
                 </div>
+                <br />
             </div>
         </Layout>
     )
