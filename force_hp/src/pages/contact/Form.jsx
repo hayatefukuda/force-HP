@@ -5,7 +5,7 @@ import Confirm from "./Confirm"
 import "./form.scss"
 
 const Form = () => {
-    const { register, handleSubmit, reset, errors, getValues} = useForm()
+    const { register, handleSubmit, errors, getValues} = useForm()
 
     const [data, setData] = useState(false)
 

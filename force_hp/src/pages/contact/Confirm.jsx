@@ -134,9 +134,9 @@ const Confirm = props => {
                 ref={register}
               />
           </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <input className="btn btn-secondary revision " onClick={props.onHide} value="訂正する" />
-            <input className="btn btn-primary ml-4" type="submit" value="送信" onClick={() => setModalShow(true)} />
+          <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+            <input className="btn btn-secondary revision " onClick={props.onHide} defaultValue="訂正する" />
+            <input className="btn btn-primary ml-4" type="submit" defaultValue="送信" onClick={() => setModalShow(true)} />
           </div>
         </form>
           <FormConclusion

@@ -66,7 +66,7 @@ const NewGraduate = () => {
                     ))}
                     <div className="text">
                       <a href="https://job.mynavi.jp/21/pc/search/corp237340/outline.html">
-                        <img src={ mynavi } width="200px" height="60px" />
+                        <img src={ mynavi } width="200px" height="60px" alt=""/>
                       </a>
                     </div>
                 </div>

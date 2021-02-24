@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
           <div className="footer-display2">
             <Link to="/access/access" className="footer3">アクセス</Link>
-            <Link href="/contact/Contact" className="footer3">お問い合わせ</Link>
+            <Link to="/contact/Contact" className="footer3">お問い合わせ</Link>
             <Link to="/contact/PrivacyPolicy" className="footer3">プライバシーポリシー</Link>
             {/* <a href="#page-top" className="footer3">リンク</a> */}
           </div>

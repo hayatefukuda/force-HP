@@ -14,12 +14,12 @@ const Access =()=>{
                     <img src={ access } className="img-fluid" alt=""/>
                     <p>アクセス</p>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm">
                             <Mapping />
                         </div>
-                        <div class="col-sm">
+                        <div className="col-sm">
                             <h5 className="acTitle">最寄駅</h5>
                             <div className="bluebox">
                                 <p>東西線/竹橋駅（3b出口[KKRホテル側]より徒歩3分）<br />半蔵門線・新宿線・三田線/神保町駅（A9出口から、徒歩5分）</p>

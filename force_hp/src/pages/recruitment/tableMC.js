@@ -35,7 +35,7 @@ const TableMC = () => {
         <div>
             {number.map(({ node }) => (
             <table border="2" width="70%" cellPadding="10" className="tablePosition">
-
+              <tbody>
                 <tr>
                     <th width="20%" className="coloring">募集職種</th>
                     <th width="40%">エンジニア職</th>
@@ -55,6 +55,7 @@ const TableMC = () => {
                     <th className="coloring">待遇</th>
                     <th colSpan="2">{node.treatment.treatment}</th>
                 </tr>
+              </tbody>
             </table>
             ))}
         </div>
