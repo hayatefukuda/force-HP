@@ -34,7 +34,7 @@ const TableMC = () => {
     return (
         <div>
             {number.map(({ node }) => (
-            <table border="2" width="70%" cellPadding="10" className="tablePosition">
+            <table key="MC" border="2" width="70%" cellPadding="10" className="tablePosition">
               <tbody>
                 <tr>
                     <th width="20%" className="coloring">募集職種</th>
