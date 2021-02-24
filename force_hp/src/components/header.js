@@ -17,9 +17,9 @@ export default class Header extends React.Component {
         <Navbar className="navbar navbar-expand-lg navbar-light fixed-top py-0" id="mainNav" expand="lg"
                 collapseOnSelect={true}>
           <div className="container">
-          <a className="navbar-brand js-scroll-trigger" 
-            // href="#page-top"
-            ><Link to="/"><img className="gray" src={logo} alt="フォース株式会社" height={100}/></Link></a>
+          <Link className="navbar-brand js-scroll-trigger" to="/">
+            <img className="gray" src={logo} alt="フォース株式会社" height={100}/>
+          </Link>
             <Navbar.Toggle aria-controls="navbarResponsive"/>
             <Navbar.Collapse id="navbarResponsive">
               <Nav className="navbar-nav text-center">
@@ -27,24 +27,16 @@ export default class Header extends React.Component {
                            items={["about", "services", "portfolio", "contact"]}
                            currentClassName="active" rootEl={"#mainNav"} offset={-75}>                  
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} 
-                    // href="#about"
-                    ><Link class="nav-link primary" to="/company_information/Home">企業情報</Link></Nav.Link>
+                    <Link className="js-scroll-trigger nav-link" to="/company_information/Home">企業情報</Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} 
-                    // href="#services"
-                    ><Link class="nav-link" to="/recruitment/recruit">採用情報</Link></Nav.Link>
+                    <Link className="js-scroll-trigger nav-link" to="/recruitment/recruit">採用情報</Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} 
-                    // href="#portfolio"
-                    ><Link class="nav-link" to="/access/access">アクセス</Link></Nav.Link>
+                    <Link className="js-scroll-trigger nav-link" to="/access/access">アクセス</Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} 
-                    // href="#contact"
-                    ><Link class="nav-link" to="/contact/Contact">お問い合わせ</Link></Nav.Link>
+                    <Link className="js-scroll-trigger nav-link" to="/contact/Contact">お問い合わせ</Link>
                   </li>
                 </Scrollspy>
               </Nav>

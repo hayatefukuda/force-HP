@@ -19,6 +19,9 @@ const Footer = () => {
             <Link to="/recruitment/midCareer" className="footer2">中途採用</Link>
           </div>
           <div className="footer-display2">
+            <Link to="/employee_interview/EmployeeInterview" className="footer1">社員インタビュー</Link>
+          </div>
+          <div className="footer-display2">
             <Link to="/access/access" className="footer3">アクセス</Link>
             <Link href="/contact/Contact" className="footer3">お問い合わせ</Link>
             <Link to="/contact/PrivacyPolicy" className="footer3">プライバシーポリシー</Link>
@@ -28,7 +31,7 @@ const Footer = () => {
           <div className="text-center">
             <Link to="/"><img src={logo} alt="フォース株式会社" height={100}/></Link>
           </div>
-          <a href="#page-top"><button type="button" class="btn btn-dark pagetop-button" href="#page-top">PAGE TOP</button></a>
+          <a href="#page-top"><button type="button" className="btn btn-dark pagetop-button" href="#page-top">PAGE TOP</button></a>
         </footer>
     )
 }

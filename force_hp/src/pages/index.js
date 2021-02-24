@@ -125,7 +125,7 @@ export default class IndexPage extends React.Component {
              <p>インタビュー要約</p>
            </div>
            </div>          
-             <Link to="/employee_interview/EmployeeInterview"><button type="button" class="btn btn-outline-primary blueline-button" href="#interview" >インタビューを見る</button></Link>
+             <Link to="/employee_interview/EmployeeInterview"><button type="button" className="btn btn-outline-primary blueline-button" href="#interview" >インタビューを見る</button></Link>
          </div>
          </section>
 
@@ -138,7 +138,7 @@ export default class IndexPage extends React.Component {
              <p>お問い合わせ</p>
            </div>
            <div className="contact-button">
-                 <button type="button" class="btn btn-primary" href="#services" onClick={Scroller.handleAnchorScroll}>
+                 <button type="button" className="btn btn-primary" href="#services" onClick={Scroller.handleAnchorScroll}>
                    <p className="contact-button1">お問い合わせはこちらから</p>
                    <p className="contact-button2">お気軽にご相談・お問い合わせ下さい。</p>
                  </button>
