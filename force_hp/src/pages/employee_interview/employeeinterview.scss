@@ -15,10 +15,9 @@
 
 .interview {
 	margin-top: 5%;
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-bottom: 5%;
-	max-width: 400px;
-	min-width: 10px;
+	max-width: 300px;
 }
 
 .interview p {
@@ -38,10 +37,9 @@
 
 .interview2 {
 	margin-top: 5%;
-	margin-left: 50%;
+	margin-right: 5%;
 	margin-bottom: 5%;
-	max-width: 400px;
-	min-width: 150px;
+	max-width: 300px;
 }
 
 .interview2 p {
@@ -61,10 +59,9 @@
 
 .interview3 {
 	margin-top: 5%;
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-bottom: 5%;
-	max-width: 400px;
-	min-width: 150px;
+	max-width: 300px;
 }
 
 .interview3 p {
@@ -83,4 +80,11 @@
 }
 #interview {
 	width: 100%;
+}
+.rightside {
+	display: flex;
+	justify-content: flex-end;
+}
+span {
+	display: inline-block;
 }
