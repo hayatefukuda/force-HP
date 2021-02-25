@@ -19,6 +19,27 @@
     padding:0;
 }
 
+.contact-text {
+	position: relative;
+}
+
+.contact-text p {
+	position: absolute;
+	// align-items: center;
+	top: 50%;
+	left: 50%;
+	font-size: 30px;
+	color: #ffffff;
+	font-family: Hiragino Maru Gothic ProN , sans-serif;
+	text-shadow: 2px 2px 2px dimgray;
+    font-weight: bold;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+
 .company-button {
 	display: inline-block;
 	text-decoration: none;

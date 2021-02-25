@@ -133,7 +133,7 @@ export default class IndexPage extends React.Component {
            {/* <div className="container"> */}
              <div className="row justify-content-center">
                {/* <div className="col-lg-8 text-center"> */}
-           <div className="text-image">
+           <div className="contact-text">
              <img src={ Contact } className="img-fluid" alt=""/>
              <p>お問い合わせ</p>
            </div>
