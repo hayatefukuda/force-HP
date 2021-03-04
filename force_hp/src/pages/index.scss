@@ -60,6 +60,9 @@
 	text-shadow: 2px 2px 2px dimgray;
 	padding: 4%;
 }
+.company-button:hover {
+	text-decoration: none;
+}
 
 // .button:hover {
 // 	background: white;
@@ -84,6 +87,10 @@
 	font-family: Hiragino Maru Gothic ProN;
 	text-shadow: 2px 2px 2px dimgray;
 	padding: 4%;
+	user-select: none;
+}
+.recruit-button:hover {
+	text-decoration: none;
 }
 
 .message {
