@@ -28,7 +28,8 @@ const Access =()=>{
                             <h5 className="acTitle">住所</h5>
                             <div className="bluebox">
                                 <p className="paddingTop">〒101-0054<br />
-                                    <span>千代田区神田錦町三丁目18番地 寿ビル7階</span><span>（データウェアネットワーク株式会社 社内）</span></p>
+                                    <span>千代田区神田錦町三丁目18番地 寿ビル7階</span>
+                                    <span>（データウェアネットワーク株式会社 社内）</span></p>
                             </div>
                         </div>
                     </div>
