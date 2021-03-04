@@ -14,7 +14,7 @@ const Greetings = () => {
                     <p>ごあいさつ</p>
                 </div>
                 <div className="main_contentsG">
-                    <p><span>社員</span>が一丸となって社会への貢献を目指す</p>
+                    <p className="mt-5"><span>社員</span>が一丸となって社会への貢献を目指す</p>
                 </div>
                 <div className="sub_contents">
                     <p>皆様には平素より当社グループ並びにフォース株式会社を御引き立て賜り

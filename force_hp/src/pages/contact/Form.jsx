@@ -152,7 +152,7 @@ const Form = () => {
                         type="submit"
                         onClick={() => setModalShow(true)}
                         value="確認画面へ"
-                        className="btn btn-primary" />
+                        className="btn btn-primary mt-3" />
                 </div>
             </form>
             {data &&

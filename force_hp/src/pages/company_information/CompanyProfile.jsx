@@ -38,9 +38,12 @@ const CompanyProfile = () => {
                             <td className="text-center">84名（2020年4月現在）</td>
                         </tr>
                         <tr>
-                            <th scope="row" className="text-center">所在地</th>
-                            <td className="text-center">〒101-0054 東京都千代田区神田錦町3-18 寿ビル7階
-                                <Link to="/access/access"><p>会社所在地</p></Link>
+                            <th scope="row" className="text-center align-middle">所在地</th>
+                            <td>
+                                <p className="text-center">〒101-0054 東京都千代田区神田錦町3-18 寿ビル7階</p>
+                                <p className="text-center">
+                                    <Link to="/access/access">会社所在地</Link>
+                                </p>
                             </td>
                         </tr>
                         <tr>
@@ -50,18 +53,15 @@ const CompanyProfile = () => {
                         <tr>
                             <th scope="row" className="text-center align-middle">事業内容</th>
                             <td>
-                                <p 
-                                className="text-center"
-                                >
+                                <p className="text-center">
                                     情報処理に関するソフトウェア及びハードウェア、スマートフォン・
-                                タブレット端末用の開発・製造及び販売、動画プラットフォームの販売</p>
-                                <Link to="/company_information/BusinessContent">
-                                <p 
-                                className="text-center"
-                                >
+                                タブレット端末用の開発・製造及び販売、動画プラットフォームの販売
+                                </p>
+                                <p className="text-center">
+                                    <Link to="/company_information/BusinessContent">
                                         事業内容
-                                    </p>
-                                </Link>
+                                    </Link>
+                                </p>
                             </td>
                         </tr>
                         <tr>

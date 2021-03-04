@@ -18,7 +18,7 @@ const Home = () => {
                     <p>企業情報</p>
                 </div>
                 <div className="container">
-                    <p className="mt-5 font-weight-bold">企業情報を表示します。</p>
+                    <p className="mt-5 font-weight-bold h4">企業情報を表示します。</p>
                 </div>
                 {/* <div className="d-flex justify-content-center button">
                     <div className="greetings">

@@ -21,9 +21,9 @@ const Contacts = () => {
                 <p className="required-text">※すべて必須項目です。</p>
             </div>
                 <Form />
-            <div className="container mt-5 bottom-contents">
+            <div className="container mt-5 mb-5 bottom-contents">
                 <p>お電話にてお問い合わせ頂く場合、フォース株式会社【総合係】まで</p>
-                <p>TEL 03-5259-5231</p>
+                <p className="h5">TEL 03-5259-5231</p>
             </div>
         </Layout>
     )

@@ -29,3 +29,7 @@
 .gray {
 	filter: invert(50%) sepia(0%) saturate(11%) hue-rotate(143deg) brightness(101%) contrast(93%);
 }
+
+.nav-toggle {
+	user-select: none;
+}

@@ -20,7 +20,7 @@ export default class Header extends React.Component {
           <Link className="navbar-brand js-scroll-trigger" to="/">
             <img className="gray" src={logo} alt="フォース株式会社" height={100}/>
           </Link>
-            <Navbar.Toggle aria-controls="navbarResponsive"/>
+            <Navbar.Toggle className="nav-toggle" aria-controls="navbarResponsive"/>
             <Navbar.Collapse id="navbarResponsive">
               <Nav className="navbar-nav text-center">
                 <Scrollspy className="navbar-nav"
