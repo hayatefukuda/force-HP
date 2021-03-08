@@ -88,3 +88,23 @@
 span {
 	display: inline-block;
 }
+
+
+@media screen and (max-width:480px) {
+	.interview {
+		margin: 10% 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.interview2 {
+		margin: 10% 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.interview3 {
+		margin: 10% 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+}

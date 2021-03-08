@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home"/>
+        <SEO title="フォース株式会社"/>
         <header className="masthead">
               <div className="bigmessage">
                 <h1 className="bigmessage1 text-white">ITサービスで</h1>
