@@ -7,7 +7,7 @@
 	// align-items: center;
 	top: 50%;
 	left: 50%;
-	font-size: 45px;
+	font-size: 2rem;
 	color: #ffffff;
 	font-family: Hiragino Maru Gothic ProN , sans-serif;
 	text-shadow: 2px 2px 2px dimgray;
@@ -28,7 +28,7 @@
 	// align-items: center;
 	top: 50%;
 	left: 50%;
-	font-size: 30px;
+	font-size: 1.6rem;
 	color: #ffffff;
 	font-family: Hiragino Maru Gothic ProN , sans-serif;
 	text-shadow: 2px 2px 2px dimgray;
@@ -194,4 +194,51 @@
 .row.justify-content-center {
 	margin: 0;
 	width: 100%;
+}
+
+//スマホサイズ時のテキストコントロール
+
+//
+@media screen and (min-width: 1097px){
+	.ci-home1 {display: none; }
+	}
+
+@media screen and (min-width: 587px){
+	.ci-home2 {display: none; }
+	}
+
+@media screen and (min-width: 385px){
+	.entry {display: none; }
+}
+
+@media screen and (min-width: 806px){
+	.rec-home1 {display: none; }
+}
+
+@media screen and (min-width: 347px){
+	.rec-home2 {display: none; }
+}
+
+@media screen and (min-width: 476px){
+	.rec-home3 {display: none; }
+}
+
+@media screen and (min-width: 463px){
+	.con-home1 {display: none; }
+}
+
+@media screen and (min-width: 947px){
+	.con-home2 {display: none; }
+}
+
+@media screen and (min-width: 497px){
+	.con-home3 {display: none; }
+}
+
+@media screen and (min-width: 347px){
+	.con-home4 {display: none; }
+}
+
+@media screen and (min-width: 467px){
+	.con-home5 {display: none; }
 }

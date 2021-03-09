@@ -55,7 +55,7 @@ export default class IndexPage extends React.Component {
                 <a href="https://job.mynavi.jp/21/pc/search/corp237340/outline.html">
                   <button type="button" className="btn-outline-primary blueline-button" href="#about" 
                   // onClick={Scroller.handleAnchorScroll}
-                  >こちらから採用エントリー</button>
+                  >こちらから<br className="entry" />採用エントリー</button>
                 </a>
                 </div>
         </header>
@@ -76,8 +76,15 @@ export default class IndexPage extends React.Component {
                    to="/company_information/BusinessContent"><p>事業内容</p><img src={icon2} alt="事業内容" height={80}/></Link>
                 <Link className="company-button btn-danger" href="#services"
                    to="/company_information/CompanyProfile"><p>企業概要</p><img src={icon3} alt="企業概要" height={80}/></Link>
-              </div>
-                <p className="message">フォース株式会社は優れた技術力の創出とＩＴがもつ限りない可能性の追求で、<br />お客様に必要とされる会社であることを目標としています。</p>
+            </div>
+                <p className="message">フォース株式会社は
+                  <br className="ci-home2" />優れた技術力の創出と
+                  <br className="ci-home1" />ＩＴがもつ限りない
+                  <br className="ci-home2" />可能性の追求で、
+                  <br />お客様に必要とされる
+                  <br className="ci-home2" />会社であることを
+                  <br className="ci-home1" />目標としています。
+                </p>
                 <hr width="70%" height="10" align="right" color="navy"></hr>
               {/* </div> */}
           {/* </div> */}
@@ -97,7 +104,10 @@ export default class IndexPage extends React.Component {
             <Link className="recruit-button btn-primary" href="#services"
                to="/recruitment/midCareer"><p>中途採用</p><img src={icon5} alt="中途採用" height={80}/></Link>
           </div>
-            <p className="message">経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
+            <p className="message">経験者・
+            <br className="rec-home2" />未経験者問わず
+            <br className="rec-home1" />FORCEで一緒に
+            <br className="rec-home3" />成長しませんか？</p>
             {/* <canvas/> */}
             <hr width="70%" height="10" align="right" color="navy"></hr>
         </section>
@@ -139,11 +149,17 @@ export default class IndexPage extends React.Component {
            </div>
            <div className="contact-button">
                  <button type="button" className="btn btn-primary" href="#services" onClick={Scroller.handleAnchorScroll}>
-                   <p className="contact-button1">お問い合わせはこちらから</p>
-                   <p className="contact-button2">お気軽にご相談・お問い合わせ下さい。</p>
+                   <p className="contact-button1">お問い合わせは
+                    <br className="con-home1" />こちらから</p>
+                   <p className="contact-button2">お気軽にご相談・
+                    <br className="con-home1" />お問い合わせ下さい。</p>
                  </button>
                  <div>
-                 <p className="text-center contact-info">お電話にてお問い合わせ頂く場合、フォース株式会社【総合係】まで</p>
+                 <p className="text-center contact-info">お電話にて
+                  <br className="con-home3" />お問い合わせ
+                    <br className="con-home4" />頂く場合、
+                  <br className="con-home2" />フォース株式会社
+                  <br className="con-home5" />【総合係】まで</p>
                  <p className="text-danger font-weight-bold text-center telephone">TEL 03-5259-5231</p>
                  <p className="font-weight-bold text-center contact-info">平日9:30〜18:30</p>
                  </div>
